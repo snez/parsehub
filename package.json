@@ -1,0 +1,27 @@
+{
+  "name": "parsehub",
+  "version": "0.1.0",
+  "description": "Turn dynamic websites into APIs",
+  "main": "parsehub.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snez/parsehub"
+  },
+  "keywords": [
+    "parsehub",
+    "parse",
+    "crawl",
+    "website",
+    "api"
+  ],
+  "author": "Christos Constantinou <snez@snez.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snez/parsehub/issues"
+  },
+  "dependencies": {
+    "request": "~2.45.0"
+  },
+  "devDependencies": {
+  }
+}
