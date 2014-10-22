@@ -5,7 +5,7 @@
   "main": "parsehub.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/snez/parsehub"
+    "url": "https://github.com/snez/parsehub.git"
   },
   "keywords": [
     "parsehub",
@@ -16,6 +16,8 @@
   ],
   "author": "Christos Constantinou <snez@snez.org>",
   "license": "MIT",
+  "homepage": "https://github.com/snez/parsehub",
+  "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/snez/parsehub/issues"
   },
