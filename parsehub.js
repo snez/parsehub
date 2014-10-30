@@ -39,7 +39,7 @@ ParseHub.prototype.getAllJobs = function(params, callback)
 	function(err, resp, body)
 	{
 		if (resp.statusCode !== 200)
-			console.warn('HTTP Response Status: ' + resp.statusCode);
+			return callback(new Error(body));
 
 		try
 		{
@@ -80,7 +80,7 @@ ParseHub.prototype.deleteJob = function(params, callback)
 	function(err, resp, body)
 	{
 		if (resp.statusCode !== 200)
-			console.warn('HTTP Response Status: ' + resp.statusCode);
+			return callback(new Error(body));
 
 		try
 		{
@@ -123,7 +123,7 @@ ParseHub.prototype.runJob = function(params, callback)
 	function(err, resp, body)
 	{
 		if (resp.statusCode !== 200)
-			console.warn('HTTP Response Status: ' + resp.statusCode);
+			return callback(new Error(body));
 
 		try
 		{
@@ -164,7 +164,7 @@ ParseHub.prototype.getRunStatus = function(params, callback)
 	function(err, resp, body)
 	{
 		if (resp.statusCode !== 200)
-			console.warn('HTTP Response Status: ' + resp.statusCode);
+			return callback(new Error(body));
 
 		try
 		{
@@ -205,7 +205,7 @@ ParseHub.prototype.getStatus = function(params, callback)
 	function(err, resp, body)
 	{
 		if (resp.statusCode !== 200)
-			console.warn('HTTP Response Status: ' + resp.statusCode);
+			return callback(new Error(body));
 
 		try
 		{
@@ -246,7 +246,7 @@ ParseHub.prototype.cancelRun = function(params, callback)
 	function(err, resp, body)
 	{
 		if (resp.statusCode !== 200)
-			console.warn('HTTP Response Status: ' + resp.statusCode);
+			return callback(new Error(body));
 
 		try
 		{
@@ -294,7 +294,7 @@ ParseHub.prototype.getResults = function(params, callback)
 	function(err, resp, body)
 	{
 		if (resp.statusCode !== 200)
-			console.warn('HTTP Response Status: ' + resp.statusCode);
+			return callback(new Error(body));
 
 		try
 		{
